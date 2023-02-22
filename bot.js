@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = '5797375523:AAG_QX-0ETk5Yom-L28TQsh5mt7iBkjki00';
+const token = '5797375523:AAGhEbPr-Q3tbJ_8F6DFEZjnnzsFlzpBvs4';
 const Tesseract = require('tesseract.js');
 const bot = new TelegramBot(token, {
     polling: true
