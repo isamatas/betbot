@@ -2,20 +2,20 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '5797375523:AAGhEbPr-Q3tbJ_8F6DFEZjnnzsFlzpBvs4';
 const Tesseract = require('tesseract.js');
 const bot = new TelegramBot(token, {
-    polling: false
+    polling: true
 });
 
 
-bot.on('polling_error', function (error) {
+/* bot.on('polling_error', function (error) {
     console.log(error);
-});
-
+}); */
+/* 
 bot.onText(/^\/start/, function (msg) {
     var chatId = msg.chat.id;
     var nameUser = msg.from.first_name;
 
     bot.sendMessage(chatId, `Hola ${nameUser} !`);
-});
+}); */
 
 bot.onText(/^Apostado/, function (msg) {
     var chatId = msg.chat.id;
@@ -31,9 +31,9 @@ bot.onText(/^Apostado/, function (msg) {
         bot.sendMessage(chatId, `Recibido`, opts);
     }    
 });
-
+/* 
 bot.on('callback_query', (query) => {
 console.log('query', query)
-})
+}) */
 
 
