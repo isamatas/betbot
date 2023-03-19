@@ -17,7 +17,7 @@ bot.onText(/^\/start/, function (msg) {
     bot.sendMessage(chatId, `Hola ${nameUser} !`);
 }); */
 
-bot.onText(/^[0-9] \w*/, function (msg) {
+bot.onText(/^[0-9]* \w*/, function (msg) {
     var chatId = msg.chat.id;
     const opts = {
         reply_to_message_id: msg.message_id,
